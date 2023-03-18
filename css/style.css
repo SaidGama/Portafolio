@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+}
+
+/*indica que el mínimo de altura */
+html {
+    height: 100%;
+}
+
+/*los item grid ocuparan el 100% de la pagina*/
+
+/*con >* todos los elementos dentro tendrás las mismas propiedades*/
+.grid-container>* {
+    text-align: center;
+    padding: 10px;
+}
+.navbar {
+    grid-area: navbar;
+    height: 10%;
+}
+.colorNav{
+    background-color: #848289;
+}
+.main {
+    grid-area: main;
+    background-color: #1a191d;
+}
+
+/*VistaCelular*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15%;
+    grid-template-areas: "navbar" "main";
+}
+
+/*Tablet*/
+@media(min-width:600px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 15% 85% 50%;
+        grid-template-areas:
+            "navbar navbar navbar"
+            "main main main"
+            "main main main"
+        ;
+    }
+}
+
+/*Escritorio*/
+@media(min-width:900px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 15% 85% 50%;
+        grid-template-areas:
+            "navbar navbar navbar"
+            "main main main"
+            "main main main"
+        ;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <title>Said Gama - Software Engineer</title>
+</head>
+
+<body class="grid-container">
+  <header>
+    <nav class="navbar bg-light fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Mi portafolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mi portafolio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item"><a href="#inicio" class="nav-link" aria-current="page">Inicio</a></li>
+              <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+              <li class="nav-item"><a href="#Skills" class="nav-link">Habilidades</a></li>
+              <li class="nav-item"><a href="#Contacto" class="nav-link">Contactame</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container d-grid gap-5" data-bs-spy="scroll" data-bs-offset="0" tabindex="0"></main>
+  <section class="inicio" id="fotoperfil">
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <img src="./resources/profilepic.jpg" alt="fotoperfil" width="200px" height="200px" style="border-radius: 10px;">
+        <h1 class="display-5 fw-bold">SAID GAMA</h1>
+        <p class="col-md-8 fs-4">Soy un desarrollador Java FullStack</p>
+        <button class="btn btn-primary btn-project" type="button">Contactame</button>
+      </div>
+    </div>
+
+    <section id="proyectos" class="proyectosContainer">
+      <h2>Mis proyectos</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="" class="card-img-top" alt="imagen1">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo atque error vero
+                placeat laborum illum omnis, est quae, molestias sit accusantium obcaecati voluptates ea asperiores
+                eligendi! Error, magni dolorum.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-project" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Ver mas</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="" class="card-img-top" alt="imagen2">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo atque error vero
+                placeat laborum illum omnis, est quae, molestias sit accusantium obcaecati voluptates ea asperiores
+                eligendi! Error, magni dolorum.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-project" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Ver mas</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="" class="card-img-top" alt="imagen3">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta aliquam ex sunt et, eaque mollitia blanditiis, dolores harum maiores doloribus est alias qui nisi voluptatem voluptate tempore vero illo.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-project" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Ver mas</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="" class="card-img-top" alt="imagen4">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 4</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo atque error vero
+                placeat laborum illum omnis, est quae, molestias sit accusantium obcaecati voluptates ea asperiores
+                eligendi! Error, magni dolorum.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-project" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Ver mas</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </section>
+  </main>
+</body>
+
+</html>
